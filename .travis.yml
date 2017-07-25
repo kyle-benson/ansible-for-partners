@@ -18,4 +18,5 @@ install: npm install gitbook-cli -g
 script:
   - gitbook build
   - gitbook serve --port 4000 --no-live --no-watch &
+  - sleep 3
   - curl -I http://localhost:4000
