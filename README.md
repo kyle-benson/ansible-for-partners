@@ -1,7 +1,5 @@
 # Interacting with Ansible
 
-
-
 There are 4 ways to interact with Ansible
 
 * Playbooks & Roles
