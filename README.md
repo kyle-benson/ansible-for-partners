@@ -1,16 +1,11 @@
 # Interacting with Ansible
+Generally there are 4 ways to interact with Ansible
 
-There are 4 ways to interact with Ansible
-
-* Playbooks & Roles
-
-* Inventories & Plugins
-
-* Modules
-
-* Ansible Tower API
-
-  * Discuss northbound & southbound API
+- Playbooks & Roles
+- Inventories & Plugins
+- Modules
+- Ansible Tower API
+	- Discuss northbound & southbound API
 
 Generally most partners will take an approach of crawl, walk, run. That  usually maps to something like:
 
@@ -21,12 +16,6 @@ Generally most partners will take an approach of crawl, walk, run. That  usually
 **Run:** Implementing the advanced features of Ansible Tower for an enterprise-class experience. This may be mapping select functionalities in your deliverable to specific northbound or southbound APIs, or offering a custom view of Ansible Tower within your deliverable.
 
 This documentation will focus on these 4 ways for a few types of partners including:
-
-* Systems Integrators
-
-* Consulting partners
-
-* OEM & ISV
-
-
-
+- Systems Integrators
+- Consulting partners
+- OEM & ISV
