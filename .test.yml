@@ -11,8 +11,7 @@
 
     - name: Run gitbook serve on port 4000 to check hosting is good
       command: gitbook serve --port 4000 --no-live --no-watch &
-      async: 45
-      poll: 0
+
 
     - name: Wait for port 4000 to be available...
       wait_for:
