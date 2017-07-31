@@ -10,7 +10,7 @@
       command: gitbook build
 
     - name: Run gitbook serve on port 4000 to check hosting is good
-      command: gitbook serve --port 4000 --no-live --no-watch &
+      shell: gitbook serve --port 4000 --no-live --no-watch &
 
 
     - name: Wait for port 4000 to be available...
