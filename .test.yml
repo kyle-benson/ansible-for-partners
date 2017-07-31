@@ -15,8 +15,6 @@
 
     - name: Wait for port 4000 to be available...
       wait_for:
-        host: localhost
-        port: 4000
         timeout: 60
 
     - name: Check to make sure we can curl the main page
