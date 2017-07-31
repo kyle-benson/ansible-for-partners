@@ -1,0 +1,25 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install gitbook via npm
+      npm:
+        name: gitbook-cli
+        global: yes
+
+    - name: Run gitbook build and see if there are any errors before attempting to serve
+      command: gitbook build
+
+    - name: Run gitbook serve on port 4000 to check hosting is good
+      command: gitbook serve --port 4000 --no-live --no-watch &
+      async: 45
+      poll: 0
+
+    - name: Wait for port 4000 to be available...
+      wait_for:
+        port: 4000
+
+    - name: Check to make sure we can curl the main page
+      uri:
+        url: http://localhost:4000
+        return_content: yes
+      register: webpage
