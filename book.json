@@ -1,0 +1,8 @@
+{
+  "variables": {
+    "hello": "everyone",
+    "url_index": {
+      "Ansible Docs" : "https://docs.ansible.com"
+    }
+  }
+}
