@@ -10,15 +10,14 @@
       command: gitbook build
 
     - name: Run gitbook serve on port 4000 to check hosting is good
-      shell: gitbook serve --port 4000 --no-live --no-watch &
+      shell: gitbook serve --port 4000 --no-live --no-watch >/dev/null 2>&1 &
+      register: result_gitbook
 
 
     - name: Wait for port 4000 to be available...
       wait_for:
-        timeout: 60
+        timeout: 30
 
     - name: Check to make sure we can curl the main page
       uri:
         url: http://localhost:4000
-        return_content: yes
-      register: webpage
