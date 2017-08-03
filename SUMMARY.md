@@ -15,4 +15,4 @@
 * [Systems Integrators](si.md)
 * [Getting Started](getStarted/README.md)
 * [Examples](examples/README.md)
-* [Index](index.md)
+* [Appendix](appendix.md)
