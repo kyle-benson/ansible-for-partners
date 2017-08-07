@@ -4,6 +4,7 @@
     "hello": "everyone",
     "url_index": {
       "Ansible Docs" : "https://docs.ansible.com",
+      "Ansible":"https://ansible.com",
       "EC2 Module Page":"http://docs.ansible.com/ansible/latest/ec2_module.html",
       "provisioning callbacks" :"http://docs.ansible.com/ansible-tower/latest/html/userguide/job_templates.html#provisioning-callbacks",
       "Cloud Modules":"http://docs.ansible.com/ansible/latest/list_of_cloud_modules.html",
