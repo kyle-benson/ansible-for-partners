@@ -16,3 +16,4 @@
 * [Getting Started](getStarted/README.md)
 * [Examples](examples/README.md)
 * [Appendix](appendix.md)
+* [Contributing](contributing.md)
